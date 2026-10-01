@@ -28,11 +28,14 @@ variable "nodes" {
   description = "List of node definitions for the devnet"
   default = [
     { name = "bootnode", count = 1, cloud = "digitalocean" },
-    { name = "mev-relay", count = 1, cloud = "hetzner", size = "ccx53" },
-    { name = "buildoor-prysm-geth", count = 1, cloud = "hetzner" },
-    { name = "lighthouse-geth", count = 2, cloud = "digitalocean", validator_start = 0, validator_end = 400 },
-    { name = "lighthouse-geth", count = 1, cloud = "hetzner", validator_start = 400, validator_end = 500 },
-    { name = "prysm-nethermind", count = 1, cloud = "hetzner", validator_start = 500, validator_end = 550 },
+    # focil-devnet-0 ready clients, 100 validators per host. ethrex is 40% of the EL.
+    { name = "teku-ethrex", count = 3, cloud = "digitalocean", validator_start = 0, validator_end = 300 },
+    { name = "teku-besu", count = 1, cloud = "digitalocean", validator_start = 300, validator_end = 400 },
+    { name = "teku-reth", count = 1, cloud = "digitalocean", validator_start = 400, validator_end = 500 },
+    { name = "lodestar-ethrex", count = 1, cloud = "digitalocean", validator_start = 500, validator_end = 600 },
+    { name = "lodestar-besu", count = 1, cloud = "digitalocean", validator_start = 600, validator_end = 700 },
+    { name = "lodestar-reth", count = 1, cloud = "digitalocean", validator_start = 700, validator_end = 800 },
+    { name = "lodestar-nethermind", count = 2, cloud = "digitalocean", validator_start = 800, validator_end = 1000 },
   ]
 
   validation {
