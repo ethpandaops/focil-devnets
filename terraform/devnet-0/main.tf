@@ -57,7 +57,7 @@ variable "cloudflare_api_token" {
 variable "focil_hcloud_token" {
   type        = string
   sensitive   = true
-  default     = ""
+  default     = null
   description = "Hetzner Cloud API Token (optional if not using Hetzner)"
 }
 
