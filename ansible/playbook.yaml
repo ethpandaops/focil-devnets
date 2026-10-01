@@ -117,18 +117,6 @@
           VIRTUAL_DEST: "/"
           LETSENCRYPT_HOST: "{{ primary_bootnode }}.{{ network_server_subdomain }}"
 
-- hosts: mev_relay
-  become: true
-  roles:
-    - role: ethpandaops.general.mev_relay
-      tags: [mev_relay]
-
-- hosts: buildoor
-  become: true
-  roles:
-    - role: ethpandaops.general.buildoor
-      tags: [buildoor]
-
 - hosts: tx_fuzz_txs
   become: true
   roles:
