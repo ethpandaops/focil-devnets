@@ -38,6 +38,7 @@ spamoor:
   authProviderUrl: "https://auth.focil-devnet-0.ethpandaops.io"
   rpcEndpoints:
   - "group(bootnode-1)name(bootnode-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.focil-devnet-0.ethpandaops.io"
+  - "group(buildoor,lodestar,nethermind,1,buildoor-lodestar-nethermind-1)name(buildoor-lodestar-nethermind-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io"
   - "group(lodestar-besu-1)name(lodestar-besu-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io"
   - "group(lodestar-ethrex-1)name(lodestar-ethrex-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.focil-devnet-0.ethpandaops.io"
   - "group(lodestar-nethermind-1)name(lodestar-nethermind-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io"

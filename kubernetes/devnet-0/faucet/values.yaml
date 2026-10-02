@@ -44,6 +44,9 @@ powfaucet:
     - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io"
       name: "lodestar-nethermind-1"
       priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io"
+      name: "buildoor-lodestar-nethermind-1"
+      priority: 5
     - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-reth-1.srv.focil-devnet-0.ethpandaops.io"
       name: "lodestar-reth-1"
       priority: 5

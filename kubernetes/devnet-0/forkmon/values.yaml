@@ -24,6 +24,8 @@ forkmon:
   endpoints:
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.focil-devnet-0.ethpandaops.io
     name: bootnode-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
+    name: buildoor-lodestar-nethermind-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
     name: lodestar-besu-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.focil-devnet-0.ethpandaops.io

@@ -7,6 +7,12 @@
   priority: -1
   archive: false
   engineSnooperUrl: http://rpc-bootnode-1.srv.focil-devnet-0.ethpandaops.io:8961
+- url: https://rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
+  name: buildoor-lodestar-nethermind-1
+  authGroup: pandaops
+  priority: -1
+  archive: false
+  engineSnooperUrl: http://rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io:8961
 - url: https://rpc-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
   name: lodestar-besu-1
   authGroup: pandaops

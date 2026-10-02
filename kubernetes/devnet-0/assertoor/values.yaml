@@ -40,6 +40,9 @@ assertoor:
     - name:  bootnode-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.focil-devnet-0.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-bootnode-1.srv.focil-devnet-0.ethpandaops.io
+    - name:  buildoor-lodestar-nethermind-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
     - name:  lodestar-besu-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
@@ -76,6 +79,7 @@ assertoor:
     walletPrivkey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.assertoor_private_key}>"
     clientPairNames:
       - bootnode-1
+      - buildoor-lodestar-nethermind-1
       - lodestar-besu-1
       - lodestar-ethrex-1
       - lodestar-nethermind-1

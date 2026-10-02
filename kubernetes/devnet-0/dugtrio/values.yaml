@@ -36,6 +36,8 @@ dugtrio:
   endpoints:
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-bootnode-1.srv.focil-devnet-0.ethpandaops.io
     name: bootnode-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
+    name: buildoor-lodestar-nethermind-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
     name: lodestar-besu-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.focil-devnet-0.ethpandaops.io

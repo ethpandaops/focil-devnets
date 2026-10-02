@@ -5,6 +5,10 @@
   name: bootnode-1
   authGroup: pandaops
   priority: -1
+- url: https://bn-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
+  name: buildoor-lodestar-nethermind-1
+  authGroup: pandaops
+  priority: -1
 - url: https://bn-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
   name: lodestar-besu-1
   authGroup: pandaops

@@ -20,6 +20,7 @@ slashoor:
     beacon:
       endpoints:
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-bootnode-1.srv.focil-devnet-0.ethpandaops.io
+        - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.focil-devnet-0.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.focil-devnet-0.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io

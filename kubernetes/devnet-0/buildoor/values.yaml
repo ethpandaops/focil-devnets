@@ -30,3 +30,4 @@ buildoor-overview:
             pathType: Prefix
 
   hosts:
+    - https://api-buildoor-lodestar-nethermind-1.srv.focil-devnet-0.ethpandaops.io
