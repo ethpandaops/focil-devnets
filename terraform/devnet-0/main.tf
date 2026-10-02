@@ -42,7 +42,7 @@ provider "cloudflare" {
 }
 
 provider "hcloud" {
-  token = var.focil_hcloud_token
+  token = coalesce(var.focil_hcloud_token, join("", [for i in range(64) : "0"]))
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////

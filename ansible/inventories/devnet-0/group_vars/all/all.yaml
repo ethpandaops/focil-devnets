@@ -175,6 +175,7 @@ ethereum_node_docker_watchtower_containers_list:
   - validator
   - xatu-sentry
   - external-block-builder
+  - buildoor
 docker_watchtower_container_additional_args:
   - "--schedule=0 {{ 60 | random(seed=ethereum_network_name ~ inventory_hostname ~ 'min') }} {{ 15 + (3 | random(seed=ethereum_network_name ~ inventory_hostname ~ 'hour')) }} * * *"
   - --stop-timeout=300s
