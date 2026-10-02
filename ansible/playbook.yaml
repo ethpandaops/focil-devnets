@@ -117,6 +117,12 @@
           VIRTUAL_DEST: "/"
           LETSENCRYPT_HOST: "{{ primary_bootnode }}.{{ network_server_subdomain }}"
 
+- hosts: buildoor
+  become: true
+  roles:
+    - role: ethpandaops.general.buildoor
+      tags: [buildoor]
+
 - hosts: tx_fuzz_txs
   become: true
   roles:

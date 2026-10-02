@@ -36,6 +36,7 @@ variable "nodes" {
     { name = "lodestar-besu", count = 1, cloud = "digitalocean", validator_start = 600, validator_end = 700 },
     { name = "lodestar-reth", count = 1, cloud = "digitalocean", validator_start = 700, validator_end = 800 },
     { name = "lodestar-nethermind", count = 2, cloud = "digitalocean", validator_start = 800, validator_end = 1000 },
+    { name = "buildoor-lodestar-nethermind", count = 1, cloud = "digitalocean", size = "s-8vcpu-32gb-640gb-intel", builder_start = 0 },
   ]
 
   validation {
