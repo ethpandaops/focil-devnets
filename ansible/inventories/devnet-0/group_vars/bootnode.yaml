@@ -97,7 +97,7 @@ ethrex_container_command_extra_args:
   - --network=/network-config/genesis.json
   - --p2p.discv4=false
   - --p2p.discv5=true
-  - --http.api=eth,net,web3,admin,debug,txpool
+  - --http.api=eth,net,web3,admin,debug,txpool,testing
   - >-
     --bootnodes={{
       (
