@@ -32,6 +32,9 @@ buildoor_container_env:
 lodestar_container_command_extra_args: >-
   {{ lodestar_container_command_extra_simple_args
      + ['--emitPayloadAttributes', '--subscribeAllSubnets'] }}
+nethermind_container_command_extra_args: >-
+  {{ nethermind_container_command_extra_simple_args
+     + ['--Blocks.MinGasPrice=10000000000'] }}
 teku_container_command_extra_args: >-
   {{ teku_container_command_extra_simple_args
      + ['--Xfork-choice-updated-always-send-payload-attributes=true', '--p2p-subscribe-all-subnets-enabled'] }}
