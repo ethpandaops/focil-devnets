@@ -1,13 +1,6 @@
 secret_zerossl:
     ACME_EAB_KID: ENC[AES256_GCM,data:UAbtTHRnXHispR1iQr/5eQMV7JMk5g==,iv:WkDvniP4a1cjpRTQqT0MnJo9UkIp+iwJ3NPSTb8sFsU=,tag:yXavQCYBVJsPHwmm2WbwSg==,type:str]
     ACME_EAB_HMAC_KEY: ENC[AES256_GCM,data:V7U8TluhY0y550IjMfubUgHSFCdxqS109TwWjSGx818J2So5zrTJR0TWzRl1bH4/9MyqCpEtTLHzLlL0j7I4XzgNvrm8qjpeNw3yRa94eyWH5EJT8VI=,iv:Evd5W8ORLtUa3sSl6XeaqY69p0FAmpiFmjXDlP+XbUY=,tag:A34c1/jnfKSFjuDf/2stYA==,type:str]
-secret_prometheus_remote_write:
-    username: ENC[AES256_GCM,data:51ZqdxUXY1aQsqdF9r8=,iv:rbvEzhqNzmHELYMTvVUU1ZkjtjbsD7xXlotWGZZKysg=,tag:Q+ILRrroATFf44h9MyTHfQ==,type:str]
-    password: ENC[AES256_GCM,data:62qXiA1cPF1KbpJGnzDBHUbfBXR68c4L,iv:8OwCpGdqtPOL34K66LULhoZFT4NZgz55gw4ycEqPXSE=,tag:OMa6O+uUGH3NoXzYvjiqcQ==,type:str]
-secret_loki:
-    endpoint: ENC[AES256_GCM,data:fgNKy2JFJ+eWraqSN8mmrMD2qua/od9Ai4KkWt0BaqJuJeNbkisVERcjZXL/OFZK0eJqNVzQh+w=,iv:3hdFH0Y+33EXpCMoEhQHMj1cwxn2EMFOdPj2YwJZAhg=,tag:H6KbRsCGIC0axq4qFfP++A==,type:str]
-    username: ENC[AES256_GCM,data:q+5WgVex9SN8fQT8EpI=,iv:tw1H4tG79UIuU1iYDN+XFNn/iNTwLu21ZIL5kD0swAI=,tag:JAoKWrhngxP1L/0PQ0ix/A==,type:str]
-    password: ENC[AES256_GCM,data:APRIVa6QMGFz2bnPco2fIR0moDPWA1sb,iv:b2fLw77IQaUY0nGLGKAMO4o6pi2gyV1M78sW3Iq8m6k=,tag:HebAfwoEu7qaGnrcCzLRyg==,type:str]
 secret_nginx_shared_basic_auth:
     name: ENC[AES256_GCM,data:O7L3,iv:DiOGlqfOfrDlt7X4OGY27OYlkDDEHguv+kg1zRhBek0=,tag:KuOX20lI/iYZOORFraiISw==,type:str]
     password: ENC[AES256_GCM,data:HyMDeoK5s6JDfsJ7j5Gg,iv:yvC4WWOOJvVeegWl0uj2P8yxcfBgNrvYSm5xUB5qux8=,tag:XoZbXpvLtUJPVoEaV3ltsg==,type:str]
@@ -47,8 +40,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2026-10-06T11:48:58Z"
-    mac: ENC[AES256_GCM,data:SJoijQl16aw5Yb2UwVygOv1Pw6kuW5QwHqlhnhIjL2sRAtuNfbaGyMg1266UF8HkOiZjxVQUOdEB3OkUkDqWTRPFJsZUYeVoqBXjzwnv4iTnAaC4RVNkd53/Ierz+ztABN3uVkatGxFNZOZw8PXvRdwcKF62apTBQ/gLAtiPuzY=,iv:EJBuy11u1aXIbk/hdzuCVXZ2secQhlHsf2VndpFKhtg=,tag:xk+P9bfmJhqjja7aJhFXOw==,type:str]
+    lastmodified: "2026-10-08T05:15:11Z"
+    mac: ENC[AES256_GCM,data:DndXKPm+5H8UsHWUNQwfiD4UNbm7TT7fVNHBQKThCA95ulvU/Jy+/nE4ogYPa7Hy83LbN7jGEwpTflW3pRR3oCBIv9xA95B9f+mP9x9n9Rp49sOJwmy+36SRX1t+0QmmHhBLKLwt/cGMZ0dRRAcOdNE0diOS0jP0ZiK0HWfgoDY=,iv:4MUfCf9kB9B1hxoN0F1yp0VI5CK3JmaJ6W+a7/sStQQ=,tag:jjTla/85GAyS2g3N/uP47w==,type:str]
     pgp:
         - created_at: "2025-10-27T13:25:35Z"
           enc: |-
